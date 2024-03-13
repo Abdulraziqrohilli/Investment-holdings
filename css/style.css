@@ -1,0 +1,177 @@
+/* Color variables */
+:root {
+  --white-color: #fff;
+  --bg-color: #fff;
+  --gray-color: #ccc;
+}
+
+/* Changing background color */
+body {
+  background: var(--bg-color) !important;
+}
+
+/* Changing link color */
+.nav-item .nav-link {
+  color: var(--white-color);
+}
+
+/* Hero section background image */
+.hero {
+  height: 100vh;
+  background-image: url("../images/a.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#skills i {
+  height: 100px;
+  width: 100px;
+}
+
+#portfolio img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+/* Timeline background line */
+#about .img::before {
+  content: "";
+  left: 50%;
+  width: 4px;
+  position: absolute;
+  height: calc(100% + 140px);
+  background: var(--gray-color);
+}
+
+#about img,
+#about .hire-text h2 {
+  width: 140px;
+}
+
+#about .hire-text h2 {
+  height: 140px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons a {
+  width: 30px;
+  height: 30px;
+}
+
+#cv img {
+  width: 230px;
+}
+
+/* Contact section background image */
+#contact {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../images/contact-bg.jpeg");
+}
+
+
+/*---===start of About section===--*/
+#about_me{
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  background-image: url("../night.jpg");
+}
+#about_me div h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2185ff;
+  font-family: 'Sevillana', cursive;
+  text-decoration: underline;
+}
+#about_me div h3{
+  padding-top: 40px;
+  color: #2185ff;
+  font-size: xx-large;
+}
+.text{
+  padding-top: 20px;
+  line-height: 30px;
+}
+.col-4{
+  margin-top: 60px;
+}
+.col-4 h6{
+  margin-top: 10px;
+  border-bottom: 1px solid #2185ff;
+}
+.col-4 h6 b{
+  font-size:large;
+}
+.col-4 div span{
+  color: gray;
+  padding-bottom: 10px;
+}
+.progress-bar{
+  transform: rotate(180deg);
+}
+.col-4 button{
+  background-color: #2185ff;
+  padding: 20px;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.col-4 button a{
+  text-decoration: none;
+  color: black;
+}
+.work{
+  padding-left: 40px;
+}
+.work b{
+  color: #2185ff;
+  padding-bottom: 100px;
+}
+.card{
+  color: gray;
+  box-shadow: 10px 10px 5px black,-2px -2px 2px black;
+  transition: all 0.4s ease;
+}
+.card:hover{
+  border: 1px solid #2185ff;
+  transform: translateY(-30px);
+}
+.card-header{
+  color: #2185ff;
+}
+.percent{
+  float: right;
+}
+.card-body{
+  line-height: 30px;
+  overflow: auto;
+}
+/*---===End of About section===--*/
+@media screen and (max-width: 990px) {
+  #skills .card {
+    width: calc(100% / 2 - 10px) !important;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  #skills .card,
+  #portfolio .card-wrapper {
+    width: 100% !important;
+  }
+}
